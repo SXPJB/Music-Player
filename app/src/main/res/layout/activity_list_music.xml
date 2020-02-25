@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBlack"
+    tools:context=".ListMusicActiviy">
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/textView_ArtistName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_artist_name"
+        style="@style/text"/>
+
+    <ImageView
+        android:id="@+id/imageView_Album"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:srcCompat="@tools:sample/avatars[0]" />
+    <TextView
+        android:id="@+id/textView_AlbumName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_album_name"
+        android:gravity="center"
+        style="@style/text"/>
+    <ListView
+        android:id="@+id/listViewMusic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

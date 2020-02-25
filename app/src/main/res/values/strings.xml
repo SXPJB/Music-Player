@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Reproductor de musica</string>
+    <string name="str_login">Inicio de sesión</string>
+    <string name="username">Usuario</string>
+    <string name="str_password">Contraseña</string>
+    <string name="str_acces">Iniciar Sesion</string>
+    <string name="str_headerListAlbun">Lista de album</string>
+    <string name="str_artist_name">Nombre del artista</string>
+    <string name="str_album_name">Nombre del album</string>
+    <string name="str_Name_Song">Nombre de la cancion</string>
+    <string name="str_time">00:00</string>
+    <string name="str_sign_up">Registrarse</string>
+    <string name="str_headerListMusic">Lista de musica</string>
+    <string name="str_headerRegister">Registro</string>
+    <string name="str_back">Resgresar</string>
+    <string name="str_confirm_password">Confirmar contraseña</string>
+</resources>

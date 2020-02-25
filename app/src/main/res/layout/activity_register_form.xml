@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBlack"
+    tools:context=".RegisterFormActivity">
+
+
+    <View
+        android:id="@+id/divider7"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="?android:attr/listDivider" />
+
+    <EditText
+        android:id="@+id/editTextUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        style="@style/editText"
+        android:inputType="textPersonName"
+        android:hint="@string/username"
+        />
+
+    <View
+        android:id="@+id/divider8"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="?android:attr/listDivider" />
+
+    <EditText
+        android:id="@+id/editTextPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        style="@style/editText"
+        android:inputType="textPassword"
+        android:hint="@string/str_password"/>
+    <View
+        android:id="@+id/divider10"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="?android:attr/listDivider" />
+
+    <EditText
+        android:id="@+id/editTextConfirmPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        style="@style/editText"
+        android:inputType="textPassword"
+        android:hint="@string/str_confirm_password"/>
+    <View
+        android:id="@+id/divider11"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="?android:attr/listDivider" />
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        style="@style/button"
+        android:onClick="signUp"
+        android:text="@string/str_sign_up"/>
+
+    <View
+        android:id="@+id/divider9"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="?android:attr/listDivider" />
+
+    <Button
+        style="@style/button"
+        android:layout_width="267dp"
+        android:onClick="goBackLogin"
+        android:layout_height="51dp"
+        android:text="@string/str_back" />
+</LinearLayout>

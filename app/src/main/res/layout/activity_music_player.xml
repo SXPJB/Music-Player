@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBlack"
+    tools:context=".MusicPlayerActivity">
+
+    <TextView
+        android:id="@+id/textView_NameSong"
+        style="@style/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_Name_Song"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="247dp" />
+
+    <View
+        android:id="@+id/divider6"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="?android:attr/listDivider" />
+
+    <ImageView
+        android:id="@+id/imageView_Album1"
+        android:layout_width="322dp"
+        android:layout_height="242dp"
+        android:layout_gravity="center" />
+
+    <View
+        android:id="@+id/divider5"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlack"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="13dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="playMusic"
+            app:srcCompat="@mipmap/jugar" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="13dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="pause"
+            app:srcCompat="@mipmap/pausa" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="13dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="stop"
+            app:srcCompat="@mipmap/detener" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="13dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="goOn"
+            app:srcCompat="@mipmap/proximo" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider12"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="?android:attr/listDivider" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        style="@style/button"
+        android:onClick="gotBackList"
+        android:text="@string/str_back"/>
+
+</LinearLayout>
