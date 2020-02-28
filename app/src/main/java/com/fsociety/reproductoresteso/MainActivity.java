@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         editTextPassword=(EditText)findViewById(R.id.editTextPassword);
         SharedPreferences prefe = getSharedPreferences("userSesion", Context.MODE_PRIVATE);
         userInSesion = prefe.getBoolean("user",false);
-        if(!userInSesion){
+        if(userInSesion){
             Intent i = new Intent(this, ListAlbumActivity.class);
             startActivity(i);
             finish();
